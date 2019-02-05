@@ -46,7 +46,7 @@ module.exports = {
       'browser-styles': path.resolve(helpers.browserPath, 'styles'),
       icons: path.resolve(helpers.browserPath, 'icons')
     },
-    extensions: ['.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
   module: {
     rules

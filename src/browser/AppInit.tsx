@@ -18,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import React from 'react'
+import * as React from 'react'
 import { createEpicMiddleware } from 'redux-observable'
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
@@ -29,11 +29,11 @@ import {
 import { BusProvider } from 'react-suber'
 import './init.js'
 import App from './modules/App/App'
-import reducers from 'shared/rootReducer'
-import epics from 'shared/rootEpic'
+import reducers from '../shared/rootReducer'
+import epics from '../shared/rootEpic'
 
-import { createReduxMiddleware, getAll, applyKeys } from 'services/localstorage'
-import { APP_START, DESKTOP, WEB } from 'shared/modules/app/appDuck'
+import { createReduxMiddleware, getAll, applyKeys } from '../shared/services/localstorage'
+import { APP_START, DESKTOP, WEB } from '../shared/modules/app/appDuck'
 import { GlobalStyle } from './styles/global-styles.js'
 
 // Configure localstorage sync
@@ -60,8 +60,8 @@ const reducer = combineReducers({ ...reducers })
 
 const enhancer = compose(
   applyMiddleware(suberMiddleware, epicMiddleware, localStorageMiddleware),
-  process.env.NODE_ENV !== 'production' && window.devToolsExtension
-    ? window.devToolsExtension()
+  process.env.NODE_ENV !== 'production' && (window as any).devToolsExtension
+    ? (window as any).devToolsExtension()
     : f => f
 )
 
@@ -80,7 +80,7 @@ bus.applyMiddleware((_, origin) => (channel, message, source) => {
 })
 
 // Introduce environment to be able to fork functionality
-const env = window && window.neo4jDesktopApi ? DESKTOP : WEB
+const env = window && (window as any).neo4jDesktopApi ? DESKTOP : WEB
 
 // Signal app upstart (for epics)
 store.dispatch({ type: APP_START, url: window.location.href, env })
@@ -93,7 +93,7 @@ const AppInit = () => {
           <GlobalStyle />
           <App
             desktopIntegrationPoint={
-              window && window.neo4jDesktopApi ? window.neo4jDesktopApi : null
+              window && (window as any).neo4jDesktopApi ? (window as any).neo4jDesktopApi : null
             }
           />
         </React.Fragment>

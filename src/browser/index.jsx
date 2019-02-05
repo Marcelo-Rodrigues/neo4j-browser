@@ -20,6 +20,6 @@
 import '@babel/polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import AppInit from './AppInit.jsx'
+import AppInit from './AppInit.tsx'
 
 ReactDOM.render(<AppInit />, document.getElementById('mount'))

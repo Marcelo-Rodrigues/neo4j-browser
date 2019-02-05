@@ -902,6 +902,31 @@
   resolved "https://neo.jfrog.io/neo/api/npm/npm/@types/mocha/-/mocha-2.2.44.tgz#1d4a798e53f35212fd5ad4d04050620171cd5b5e"
   integrity sha1-HUp5jlPzUhL9WtTQQFBiAXHNW14=
 
+"@types/node@^10.12.21":
+  version "10.12.21"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/@types/node/-/node-10.12.21.tgz#7e8a0c34cf29f4e17a36e9bd0ea72d45ba03908e"
+  integrity sha1-fooMNM8p9OF6Num9DqctRboDkI4=
+
+"@types/prop-types@*":
+  version "15.5.8"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/@types/prop-types/-/prop-types-15.5.8.tgz#8ae4e0ea205fe95c3901a5a1df7f66495e3a56ce"
+  integrity sha1-iuTg6iBf6Vw5AaWh339mSV46Vs4=
+
+"@types/react-dom@^16.0.11":
+  version "16.0.11"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/@types/react-dom/-/react-dom-16.0.11.tgz#bd10ccb0d9260343f4b9a49d4f7a8330a5c1f081"
+  integrity sha1-vRDMsNkmA0P0uaSdT3qDMKXB8IE=
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.8.1":
+  version "16.8.1"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/@types/react/-/react-16.8.1.tgz#b431b104ecc6febda170b718caa9f50be66a6750"
+  integrity sha1-tDGxBOzG/r2hcLcYyqn1C+ZqZ1A=
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@types/sinon-chai@2.7.29":
   version "2.7.29"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/@types/sinon-chai/-/sinon-chai-2.7.29.tgz#4db01497e2dd1908b2bd30d1782f456353f5f723"
@@ -1457,6 +1482,20 @@ autoprefixer@^7.1.1, autoprefixer@^7.1.4:
     num2fraction "^1.2.2"
     postcss "^6.0.17"
     postcss-value-parser "^3.2.3"
+
+awesome-typescript-loader@^5.2.1:
+  version "5.2.1"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/awesome-typescript-loader/-/awesome-typescript-loader-5.2.1.tgz#a41daf7847515f4925cdbaa3075d61f289e913fc"
+  integrity sha1-pB2veEdRX0klzbqjB11h8onpE/w=
+  dependencies:
+    chalk "^2.4.1"
+    enhanced-resolve "^4.0.0"
+    loader-utils "^1.1.0"
+    lodash "^4.17.5"
+    micromatch "^3.1.9"
+    mkdirp "^0.5.1"
+    source-map-support "^0.5.3"
+    webpack-log "^1.2.0"
 
 aws-sign2@~0.7.0:
   version "0.7.0"
@@ -2790,6 +2829,11 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
+csstype@^2.2.0:
+  version "2.6.2"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/csstype/-/csstype-2.6.2.tgz#3043d5e065454579afc7478a18de41909c8a2f01"
+  integrity sha1-MEPV4GVFRXmvx0eKGN5BkJyKLwE=
+
 cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
@@ -2861,6 +2905,13 @@ d3@3:
   version "3.5.17"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/d3/-/d3-3.5.17.tgz#bc46748004378b21a360c9fc7cf5231790762fb8"
   integrity sha1-vEZ0gAQ3iyGjYMn8fPUjF5B2L7g=
+
+d@1:
+  version "1.0.0"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
+  integrity sha1-dUu1v+VUUdpppYuU1F9MWwRi1Y8=
+  dependencies:
+    es5-ext "^0.10.9"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -3319,7 +3370,7 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
-enhanced-resolve@^4.1.0:
+enhanced-resolve@^4.0.0, enhanced-resolve@^4.1.0:
   version "4.1.0"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/enhanced-resolve/-/enhanced-resolve-4.1.0.tgz#41c7e0bfdfe74ac1ffe1e57ad6a5c6c9f3742a7f"
   integrity sha1-Qcfgv9/nSsH/4eV61qXGyfN0Kn8=
@@ -3366,6 +3417,32 @@ es-to-primitive@^1.1.1:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
+  version "0.10.47"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/es5-ext/-/es5-ext-0.10.47.tgz#d24232e1380daad5449a817be19bde9729024a11"
+  integrity sha1-0kIy4TgNqtVEmoF74ZvelykCShE=
+  dependencies:
+    es6-iterator "~2.0.3"
+    es6-symbol "~3.1.1"
+    next-tick "1"
+
+es6-iterator@~2.0.3:
+  version "2.0.3"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/es6-iterator/-/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
+  integrity sha1-p96IkUGgWpSwhUQDstCg+/qY87c=
+  dependencies:
+    d "1"
+    es5-ext "^0.10.35"
+    es6-symbol "^3.1.1"
+
+es6-symbol@^3.1.1, es6-symbol@~3.1.1:
+  version "3.1.1"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/es6-symbol/-/es6-symbol-3.1.1.tgz#bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77"
+  integrity sha1-vwDvT9q2uhtG7Le2KbTH7VcVzHc=
+  dependencies:
+    d "1"
+    es5-ext "~0.10.14"
 
 es6-templates@^0.2.3:
   version "0.2.3"
@@ -6187,7 +6264,7 @@ lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11
   resolved "https://neo.jfrog.io/neo/api/npm/npm/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
 
-log-symbols@2.2.0, log-symbols@^2.0.0:
+log-symbols@2.2.0, log-symbols@^2.0.0, log-symbols@^2.1.0:
   version "2.2.0"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
   integrity sha1-V0Dhxdbw39pK2TI7UzIQfva0xAo=
@@ -6221,6 +6298,14 @@ loglevel@^1.4.1:
   version "1.6.1"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/loglevel/-/loglevel-1.6.1.tgz#e0fc95133b6ef276cdc8887cdaf24aa6f156f8fa"
   integrity sha1-4PyVEztu8nbNyIh82vJKpvFW+Po=
+
+loglevelnext@^1.0.1:
+  version "1.0.5"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/loglevelnext/-/loglevelnext-1.0.5.tgz#36fc4f5996d6640f539ff203ba819641680d75a2"
+  integrity sha1-NvxPWZbWZA9Tn/IDuoGWQWgNdaI=
+  dependencies:
+    es6-symbol "^3.1.1"
+    object.assign "^4.1.0"
 
 long@~3:
   version "3.2.0"
@@ -6672,6 +6757,11 @@ neo4j-driver@^1.7.2:
     babel-runtime "^6.26.0"
     text-encoding "^0.6.4"
     uri-js "^4.2.1"
+
+next-tick@1:
+  version "1.0.0"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
+  integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -9233,6 +9323,14 @@ source-list-map@^2.0.0:
   resolved "https://neo.jfrog.io/neo/api/npm/npm/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha1-OZO9hzv8SEecyp6jpUeDXHwVSzQ=
 
+source-map-loader@^0.2.4:
+  version "0.2.4"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/source-map-loader/-/source-map-loader-0.2.4.tgz#c18b0dc6e23bf66f6792437557c569a11e072271"
+  integrity sha1-wYsNxuI79m9nkkN1V8VpoR4HInE=
+  dependencies:
+    async "^2.5.0"
+    loader-utils "^1.1.0"
+
 source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
   version "0.5.2"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/source-map-resolve/-/source-map-resolve-0.5.2.tgz#72e2cc34095543e43b2c62b2c4c10d4a9054f259"
@@ -9243,6 +9341,14 @@ source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
     resolve-url "^0.2.1"
     source-map-url "^0.4.0"
     urix "^0.1.0"
+
+source-map-support@^0.5.3:
+  version "0.5.10"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/source-map-support/-/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
+  integrity sha1-IhQIC8nVGDJRHuK6uW48L5NTEgw=
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
 
 source-map-support@^0.5.6, source-map-support@~0.5.6:
   version "0.5.9"
@@ -9938,6 +10044,11 @@ typescript@^2.4.2, typescript@^2.5.1:
   resolved "https://neo.jfrog.io/neo/api/npm/npm/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
   integrity sha1-HL9h0F1rliaSROtqO85L2RTg8Aw=
 
+typescript@^3.3.1:
+  version "3.3.1"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/typescript/-/typescript-3.3.1.tgz#6de14e1db4b8a006ac535e482c8ba018c55f750b"
+  integrity sha1-beFOHbS4oAasU15ILIugGMVfdQs=
+
 ua-parser-js@^0.7.18:
   version "0.7.19"
   resolved "https://neo.jfrog.io/neo/api/npm/npm/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
@@ -10315,6 +10426,16 @@ webpack-dev-server@^3.1.9:
     webpack-dev-middleware "3.4.0"
     webpack-log "^2.0.0"
     yargs "12.0.2"
+
+webpack-log@^1.2.0:
+  version "1.2.0"
+  resolved "https://neo.jfrog.io/neo/api/npm/npm/webpack-log/-/webpack-log-1.2.0.tgz#a4b34cda6b22b518dbb0ab32e567962d5c72a43d"
+  integrity sha1-pLNM2msitRjbsKsy5WeWLVxypD0=
+  dependencies:
+    chalk "^2.1.0"
+    log-symbols "^2.1.0"
+    loglevelnext "^1.0.1"
+    uuid "^3.1.0"
 
 webpack-log@^2.0.0:
   version "2.0.0"

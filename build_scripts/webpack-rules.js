@@ -22,9 +22,14 @@ const path = require('path')
 
 module.exports = [
   {
-    test: /\.(js|jsx)$/,
+    test: /\.(t|j)sx?$/,
     exclude: /(node_modules)|(cypher-codemirror)|(test_utils)|(dist)/,
-    use: 'babel-loader'
+    use: 'awesome-typescript-loader'
+  },
+  {
+    test: /\.js$/,
+    enforce: 'pre',
+    loader: 'source-map-loader'
   },
   {
     test: /\.(png|gif|jpg|svg)$/,
